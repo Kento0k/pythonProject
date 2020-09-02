@@ -14,6 +14,7 @@ def start_message(message):
 def help_message(message):
     bot.send_message(message.chat.id, 'Я могу поприветствовать а больше ничего не могу')
 
+
 @bot.message_handler(content_types=['text'])
 def handle_message(message):
     if message.from_user.username == 'sashka_gavr':
